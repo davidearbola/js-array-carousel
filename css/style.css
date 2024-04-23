@@ -9,3 +9,19 @@ body {
 	background-color: #222;
 	color: white;
 }
+
+#box-slides {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.slide {
+	width: 50%;
+	object-fit: cover;
+	display: none;
+}
+
+.active {
+	display: inline-block;
+}
