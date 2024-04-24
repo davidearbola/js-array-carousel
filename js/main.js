@@ -69,9 +69,36 @@ document.getElementById("previous").addEventListener("click", function () {
 
     //aggiungo l'active alla successiva
 	slides[slideSelected].classList.add("active");
-	console.log("Selezione -> aggiungi", slideSelected);
-
-
-    
+	console.log("Selezione -> aggiungi", slideSelected); 
 });
+
+document.getElementById("thumb-0").addEventListener("click", function (){
+	slides[0].classList.add(`active`);
+	slides[slideSelected].classList.remove(`active`);
+	slideSelected = 0;
+})
+
+document.getElementById("thumb-1").addEventListener("click", function (){
+	slides[1].classList.add(`active`);
+	slides[slideSelected].classList.remove(`active`);
+	slideSelected = 1;
+})
+
+document.getElementById("thumb-2").addEventListener("click", function (){
+	slides[2].classList.add(`active`);
+	slides[slideSelected].classList.remove(`active`);
+	slideSelected = 2;
+})
+
+document.getElementById("thumb-3").addEventListener("click", function (){
+	slides[3].classList.add(`active`);
+	slides[slideSelected].classList.remove(`active`);
+	slideSelected = 3;
+})
+
+document.getElementById("thumb-4").addEventListener("click", function (){
+	slides[4].classList.add(`active`);
+	slides[slideSelected].classList.remove(`active`);
+	slideSelected = 4;
+})
 
