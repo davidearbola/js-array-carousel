@@ -53,21 +53,21 @@ document.getElementById("next").addEventListener("click", function () {
 });
 
 
-//Esempio di event handler
+// event handler
 document.getElementById("previous").addEventListener("click", function () {
     //Rimuovo l'active attuale
 	slides[slideSelected].classList.remove("active");
 	console.log("Selezione -> rimuovi", slideSelected);
-    //se non sono arrivato all'ultima immagine
+    //se non sono arrivato alla prima immagine
 	if( slideSelected > 0){
-		//la nuova selected è la prossima
+		//la nuova selected è la precedente
 		slideSelected--;
 	} else {
-		//la nuova selected è la prima
+		//la nuova selected è l'ultima
 		slideSelected = 4;
 	}
 
-    //aggiungo l'active alla successiva
+    //aggiungo l'active alla precedente
 	slides[slideSelected].classList.add("active");
 	console.log("Selezione -> aggiungi", slideSelected); 
 });
